@@ -1,15 +1,6 @@
 <template>
-  <div class="flex flex-wrap container bg-gray-400">
-    <div class="w-6/12 bg-red-500">
-      <H4 class="text-white font-bold text-xl"
-        >Vue Resto an traditional indonesian food</H4
-      >
-    </div>
-    <div class="w-6/12 bg-blue-500">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-      dignissimos provident et reprehenderit amet quae ratione ducimus quaerat
-      ex velit! Iste ipsum praesentium excepturi repudiandae dicta earum eaque
-      necessitatibus veritatis.
-    </div>
+  <div class="grid grid-cols-1 md:grid-cols-2">
+    <div class="bg-gray-500 w-full h-32"></div>
+    <div class="bg-gray-800 w-full h-32"></div>
   </div>
 </template>
