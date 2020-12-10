@@ -1,9 +1,10 @@
 <template>
   <div class="home">
-    <Navbar />
     <Header />
-    <div v-for="product in products" :key="product.id">
-      <CardProduct :product="product"/>
+    <div class="grid grid-cols-2 md:grid-cols-4 mt-5 mb-5 mx-auto">
+      <div v-for="product in products" :key="product.id">
+        <CardProduct :product="product"/>
+      </div>
     </div>
   </div>
 </template>

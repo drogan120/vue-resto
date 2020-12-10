@@ -11,6 +11,16 @@ const routes: Array<RouteRecordRaw> = [
     name: 'About',
     component: () => import('../views/About.vue'),
   },
+  {
+    path: '/menu',
+    name: 'Menu',
+    component: () => import('../views/About.vue'),
+  },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: () => import('../views/About.vue'),
+  },
 ];
 
 const router = createRouter({
