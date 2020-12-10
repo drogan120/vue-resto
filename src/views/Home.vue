@@ -3,7 +3,7 @@
     <Header />
     <div class="grid grid-cols-2 md:grid-cols-4 mt-5 mb-5 mx-auto">
       <div v-for="product in products" :key="product.id">
-        <CardProduct :product="product"/>
+        <BestProduct :product="product"/>
       </div>
     </div>
   </div>
@@ -13,13 +13,13 @@
 import { defineComponent } from 'vue';
 import axios from 'axios';
 import Header from '@/components/HeaderComponent.vue';
-import CardProduct from '@/components/ProductComponent.vue';
+import BestProduct from '@/components/BestProductComponent.vue';
 
 export default defineComponent({
   name: 'Home',
   components: {
     Header,
-    CardProduct,
+    BestProduct,
   },
   data() {
     return {
@@ -32,7 +32,7 @@ export default defineComponent({
     },
   },
   mounted() {
-    axios.get('http://localhost:3000/products')
+    axios.get('http://localhost:3000/best-products')
       .then((response) => this.setProduct(response.data))
       .catch((error) => console.log(error));
   },
