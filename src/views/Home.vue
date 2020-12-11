@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <Header />
-    <div class="grid grid-cols-2 md:grid-cols-4 mt-5 mb-5 mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 mt-5 mb-5">
       <div v-for="product in products" :key="product.id">
-        <BestProduct :product="product"/>
+        <Products :product="product"/>
       </div>
     </div>
   </div>
@@ -13,13 +13,13 @@
 import { defineComponent } from 'vue';
 import axios from 'axios';
 import Header from '@/components/HeaderComponent.vue';
-import BestProduct from '@/components/BestProductComponent.vue';
+import Products from '@/components/ProductComponent.vue';
 
 export default defineComponent({
   name: 'Home',
   components: {
     Header,
-    BestProduct,
+    Products,
   },
   data() {
     return {

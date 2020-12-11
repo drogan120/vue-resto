@@ -14,7 +14,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/menu',
     name: 'Menu',
-    component: () => import('@/components/ProductComponent.vue'),
+    component: () => import('@/views/Menu.vue'),
   },
   {
     path: '/cart',
