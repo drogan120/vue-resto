@@ -6,6 +6,7 @@ dependencies:
   tailwindcss: /@tailwindcss/postcss7-compat/2.0.1
   vue: 3.0.2
   vue-router: 4.0.0-rc.2_vue@3.0.2
+  vue-toast-notification: 0.6.0_vue@3.0.2
 devDependencies:
   '@typescript-eslint/eslint-plugin': 2.34.0_5004700905763c91177aaa7d1d0d56ac
   '@typescript-eslint/parser': 2.34.0_eslint@6.8.0+typescript@3.9.7
@@ -2155,8 +2156,7 @@ packages:
     engines:
       node: '>=0.4.0'
     resolution:
-      integrity: sha1-DeiJpgEgOQmw++B7iTjcIdLpZ7w=
-      tarball: acorn-walk/download/acorn-walk-7.2.0.tgz
+      integrity: sha512-OPdCF6GsMIP+Az+aWfAAOEt2/+iVDKE7oy6lJ098aoe59oAmK76qV6Gw60SbZ8jHuG2wH058GF4pLFbYamYrVA==
   /acorn/6.4.2:
     dev: true
     engines:
@@ -2170,8 +2170,7 @@ packages:
       node: '>=0.4.0'
     hasBin: true
     resolution:
-      integrity: sha1-/q7SVZc9LndVW4PbwIhRpsY1IPo=
-      tarball: acorn/download/acorn-7.4.1.tgz
+      integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
   /address/1.1.2:
     dev: true
     engines:
@@ -11144,6 +11143,16 @@ packages:
     resolution:
       integrity: sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
       tarball: vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz
+  /vue-toast-notification/0.6.0_vue@3.0.2:
+    dependencies:
+      vue: 3.0.2
+    dev: false
+    engines:
+      node: '>=10.13.0'
+    peerDependencies:
+      vue: ^2.0.0
+    resolution:
+      integrity: sha512-GSXLTemx/+YLDpeObuMcz+gQ6NxvBcJxGhj5PB8CZDDBUQWbeAp0ZUPZEixDun/GtbxBOA9jLxo4MFPHTbIBYw==
   /vue/3.0.2:
     dependencies:
       '@vue/compiler-dom': 3.0.2
@@ -11589,3 +11598,4 @@ specifiers:
   typescript: ~3.9.3
   vue: ^3.0.0
   vue-router: ^4.0.0-0
+  vue-toast-notification: ^0.6.0

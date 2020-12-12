@@ -9,7 +9,7 @@
         </p>
         <p class="mt-2 mb-2">Rp. {{ product.price }}</p>
         <router-link
-          to="`/products/${product.id}`"
+          :to="`/menu/${product.id}`"
           class="rounded mt-3 bg-green-500 hover:bg-green-800 p-2 h-1 w-3 text-gray-100 text-xs"
           >Get
         </router-link>

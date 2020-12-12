@@ -1,6 +1,6 @@
 <template>
   <div class="flex bg-green-100 text-gray-600 antialiased py-5 border-b
-  border-green-200  shadow items-center">
+  border-green-200 shadow items-center">
     <div class="flex ml-5 items-center  justify-between">
       <div class="border border-green-600 rounded-full p-2">
         <img

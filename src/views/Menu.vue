@@ -1,6 +1,5 @@
 <template>
   <div class="menu">
-
   <div class="container mt-5 mx-6">
     <input
       type="text"
@@ -40,14 +39,14 @@ export default defineComponent({
     getProducts(data: []) {
       this.products = data;
     },
-    findProduct() {
-      axios.get(`http://localhost:3000/products?q=${this.keywordSearch}`)
+    async findProduct() {
+      await axios.get(`http://localhost:3000/products?q=${this.keywordSearch}`)
         .then((res) => this.getProducts(res.data))
         .catch((err) => console.log(err));
     },
   },
-  mounted() {
-    axios.get('http://localhost:3000/products')
+  async mounted() {
+    await axios.get('http://localhost:3000/products')
       .then((res) => this.getProducts(res.data))
       .catch((err) => console.log(err));
   },

@@ -31,8 +31,8 @@ export default defineComponent({
       this.products = data;
     },
   },
-  mounted() {
-    axios.get('http://localhost:3000/best-products')
+  async mounted() {
+    await axios.get('http://localhost:3000/best-products')
       .then((response) => this.setProduct(response.data))
       .catch((error) => console.log(error));
   },
